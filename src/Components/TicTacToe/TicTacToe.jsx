@@ -11,10 +11,9 @@ export const TicTacToe = () => {
   let [count, setCount] = useState(0);
   let [lock, setLock] = useState(false);
 
-  const toggle = (w, num) => {
+  const toggle = (e, num) => {
     if (lock) {
       return 0;
-
     }
     if(count%2===0)
     {
